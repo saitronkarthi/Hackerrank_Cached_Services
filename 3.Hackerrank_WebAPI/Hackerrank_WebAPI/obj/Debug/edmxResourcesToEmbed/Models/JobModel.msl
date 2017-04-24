@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HackerrankModelStoreContainer" CdmEntityContainer="HackerrankEntities">
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="HackerrankModel.Job">
+        <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="Job_id" ColumnName="Job_id" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="TechniciansAssigned" ColumnName="TechniciansAssigned" />
+          <ScalarProperty Name="Estimate" ColumnName="Estimate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

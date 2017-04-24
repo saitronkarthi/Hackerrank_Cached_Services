@@ -1,0 +1,30 @@
+Create Database Hackerrank;
+CREATE TABLE [dbo].[Job](
+	[Job_id] [int] IDENTITY(1,1) NOT NULL,
+	[CustomerName] [nvarchar](50) NOT NULL,
+	[Location] [nvarchar](max) NOT NULL,
+	[TechniciansAssigned] [nvarchar](max) NOT NULL,
+	[Estimate] [decimal](10, 2) NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+
+insert into Job values (
+'Mr.Albert',
+'Apt # xx, XX Drive',
+'Techinican1',
+132.00
+);
+
+insert into Job values (
+'Mrs.Ann',
+'Apt # yy, YY Drive',
+'Techinican2',
+900.00
+);
+
+insert into Job values (
+'Mr & Mrs.Jobs',
+'Apt # zz, ZZ Drive',
+'Techinican3',
+1200
+);

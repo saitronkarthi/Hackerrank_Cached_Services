@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HackerrankModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Hackerrank.dbo.Job' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Job_id" />
+      <PropertyRef Name="CustomerName" />
+      <PropertyRef Name="Location" />
+      <PropertyRef Name="TechniciansAssigned" />
+      <PropertyRef Name="Estimate" />
+    </Key>
+    <Property Name="Job_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Location" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TechniciansAssigned" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Estimate" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="HackerrankModelStoreContainer">
+    <EntitySet Name="Job" EntityType="Self.Job" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+[Job].[Job_id] AS [Job_id], 
+[Job].[CustomerName] AS [CustomerName], 
+[Job].[Location] AS [Location], 
+[Job].[TechniciansAssigned] AS [TechniciansAssigned], 
+[Job].[Estimate] AS [Estimate]
+FROM [dbo].[Job] AS [Job]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Repository_Cached_Services", "HR_Repository_Cached_Services\HR_Repository_Cached_Services.csproj", "{478CB2F3-62C2-46ED-81E7-1E6A6BDB4D93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR_Repository_Cached_Services.Tests", "HR_Repository_Cached_Services.Tests\HR_Repository_Cached_Services.Tests.csproj", "{72B97C11-7656-4E9A-853F-32A65D76B525}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{478CB2F3-62C2-46ED-81E7-1E6A6BDB4D93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{478CB2F3-62C2-46ED-81E7-1E6A6BDB4D93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{478CB2F3-62C2-46ED-81E7-1E6A6BDB4D93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{478CB2F3-62C2-46ED-81E7-1E6A6BDB4D93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72B97C11-7656-4E9A-853F-32A65D76B525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72B97C11-7656-4E9A-853F-32A65D76B525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72B97C11-7656-4E9A-853F-32A65D76B525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72B97C11-7656-4E9A-853F-32A65D76B525}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
